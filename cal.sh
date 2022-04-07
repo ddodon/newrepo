@@ -7,6 +7,7 @@ let Add=${array[0]}+${array[1]}
 let Sub=${array[0]}-${array[1]}
 let Div=${array[0]}/${array[1]}
 let Mul=${array[0]}*${array[1]}
+echo "project management in github"
 if [ $# -lt 1 ]; then                                                                                                                                         echo "...none operator parameter...."
  PS3="select menu: "
  select op in "add" "sub" "div" "mul"
