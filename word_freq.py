@@ -4,7 +4,7 @@ import sys
 
 file = sys.argv[1]
 text = open(file,"r")
-num = sys.argv[2] # 상위 몇 개 출력 할지
+num = int(sys.argv[2]) # 상위 몇 개 출력 할지
 dic = {} #dictionary
 
 lines = text.readlines() #파일을 한 줄 씩 읽어서 리스트에 저장
@@ -24,5 +24,5 @@ for k, v in dic.items():
 	result.append(token)
 result = sorted(result,reverse=True) #내림차순
 
-for v,k in result[:5]: #상위 num개 출력
+for v,k in result[:num]: #상위 num개 출력
 	print(k,v)
