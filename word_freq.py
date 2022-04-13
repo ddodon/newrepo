@@ -25,4 +25,4 @@ for k, v in dic.items():
 result = sorted(result,reverse=True) #내림차순
 
 for v,k in result[:num]: #상위 num개 출력
-	print(k,v)
+	print("{:10} = {:10}".format(k,v)))
