@@ -2,11 +2,19 @@
 
 import sys
 
-if __name__=='__main__':
-	print(sys.argv)
+file = sys.argv[1]
+text = open(file,"r")
+num = sys.argv[2] # 상위 몇 개 출력 할지
 
-word = sys.argv[1]
-num = sys.argv[2]
+word = text.read().split()
 
-print(word)
-print(num)
+dic = {} #dictionary
+
+for w in word:
+	if not w in dic:
+		dic[w] = 1
+	else:
+		dic[w] += 1
+
+print(result[:num])#상위 num개 출력
+
