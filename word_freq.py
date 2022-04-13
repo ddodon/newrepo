@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 
+# OSP HW05 <Python Programming>
+# 2016112414 문상돈
+
 import sys
 
 file = sys.argv[1]
@@ -25,4 +28,4 @@ for k, v in dic.items():
 result = sorted(result,reverse=True) #내림차순
 
 for v,k in result[:num]: #상위 num개 출력
-	print("{:<5}{:>5}".format(k,v))
+	print("{:<7}{:>7}".format(k,v))
